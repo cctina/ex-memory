@@ -76,7 +76,7 @@ header p {
 	/*float: left;*/
 	background-image: url('../images/shadow.png');
 	background-repeat: no-repeat;
-	background-position: bottom;
+	background-position: bottom right;
 }
 
 .entry figure {
