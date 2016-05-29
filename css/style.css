@@ -1,0 +1,15 @@
+@font-face {
+	font-family: 'PunkboyRegular';
+	src: url('../fonts/punkboy_tbs.ttf');
+}
+
+.font-punkboy {
+	font-family: 'PunkboyRegular', Arial, Sans-serif;
+}
+.font-montserrat {
+	font-family: Montserrat, Georgia, serif;
+}
+
+p {
+	font-family: Georgia, Times, serif;
+}
