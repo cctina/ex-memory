@@ -10,8 +10,8 @@ $(function() {
 		$img = $(this).children('figure').children('img');
 		$thisCover = $cover.clone();
 		$thisCover.attr('id', $(this).attr('id') + 'Cover');
-		$thisCover.width($img.width());
-		$thisCover.height($img.height());
+		$thisCover.width($img.outerWidth());	// padding, border included
+		$thisCover.height($img.outerHeight());	// padding, border included
 		$thisCover.css('dispaly: inline-block');
 		// add cover to album
 		$img.before($thisCover);
