@@ -20,14 +20,14 @@ $(function() {
 		//mouse enter
 		function(){
 			$thisCover = $(this).children('figure').children('.cover');
-			$thisCover.animate({
+			$thisCover.stop().animate({
 		    	opacity: 0.5
 		    }, 300);
 		},
 		//mouse leave 
 		function(){
 			$thisCover = $(this).children('figure').children('.cover');
-		    $thisCover.animate({
+		    $thisCover.stop().animate({
 		    	opacity: 0.0
 	    	}, 300);
 		}
