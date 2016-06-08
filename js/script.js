@@ -7,13 +7,14 @@ $(function() {
 	$entry = $('.entry');
 	$entry.each(function() {
 		// create cover for each entry
-		$img = $(this).children('figure').children('img');
+		var coverId = $(this).attr('id') + 'Cover';
 		$thisCover = $cover.clone();
-		$thisCover.attr('id', $(this).attr('id') + 'Cover');
+		$thisCover.attr('id', coverId);
 		$thisCover.width($img.outerWidth());	// padding, border included
 		$thisCover.height($img.outerHeight());	// padding, border included
 		$thisCover.css('dispaly: inline-block');
 		// add cover to album
+		$img = $(this).children('figure').children('img');
 		$img.before($thisCover);
 	});
 	$entry.hover(
